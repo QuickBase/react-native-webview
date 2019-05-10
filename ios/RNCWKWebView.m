@@ -746,6 +746,7 @@ static NSURLCredential* clientAuthenticationCredential;
     [event addEntriesFromDictionary:@{
       @"didFailProvisionalNavigation": @YES,
       @"domain": error.domain,
+      @"loading": @(false),
       @"code": @(error.code),
       @"description": error.localizedDescription,
     }];

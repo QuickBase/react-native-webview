@@ -279,6 +279,7 @@ RCT_NOT_IMPLEMENTED(- (instancetype)initWithCoder:(NSCoder *)aDecoder)
     NSMutableDictionary<NSString *, id> *event = [self baseEvent];
     [event addEntriesFromDictionary:@{
       @"domain": error.domain,
+      @"loading": @(false),
       @"code": @(error.code),
       @"description": error.localizedDescription,
     }];
